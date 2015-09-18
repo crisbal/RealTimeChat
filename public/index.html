@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Real Time Chat</title>
+    <script src="/script/socket.io.js"></script>
+    <script src="/script/jquery.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+    <div id="welcomeDiv">
+        <div id="welcomeContent">
+            <h1>Welcome!</h1>
+            <h3>Before you join please choose an <span>username</span></h3>
+            <form id="formUsername">
+                <input type="text" id="username" autocomplete="false" placeholder="Username" required><br>
+                <input type="submit" id="joinChat" value="Join the chat">
+            </form>
+        </div>
+    </div>
+    <div id="chatDiv" class="hidden">
+        <div id="header">
+            <div id="header-content">
+                <h2 id="title">Real Time Chat</h2>
+                <div id="commands">
+                    <span title="Online Users" class="fa fa-users fa-2x"></span>&nbsp;
+                    <span title="Settings" class="fa fa-cog fa-2x"></span>
+                </div>
+            </div>
+        </div>
+        <div id="messages-container">
+            <div id="messages"></div>
+        </div>
+        <div id="form-container">
+            <form id="formSendMessage">
+                <input type="text" placeholder="Type a message here" id="message" autocomplete="off" required>
+                <button id="sendMessage" class="fa fa-send"></button>
+            </form>
+        </div>
+    </div>
+    <script src="/script/chat.js"></script>
+</body>
+</html>

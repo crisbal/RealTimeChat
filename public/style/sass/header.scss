@@ -1,0 +1,31 @@
+@import "colors.scss";
+
+#header{
+    width: 100%;
+    
+    #header-content{
+        padding: 0.5em;
+        
+        color: $main-color;
+        background-color: $main-white;
+        
+        border-bottom: 2px solid $main-color;
+        
+        div,h2,span{
+            display: inline-block;
+        }
+        
+        h2{
+            font-size: 2em;
+        }
+
+        #commands{
+            float: right;
+            font-size: 0.8em;
+            span{
+                cursor: pointer;
+            }
+        }
+    }
+    
+}

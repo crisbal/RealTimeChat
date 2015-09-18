@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: white; }
+
+body {
+  display: table; }
+
+#chatDiv {
+  display: table;
+  width: 100%;
+  height: 100%; }
+
+#chatDiv.hidden {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+#welcomeDiv {
+  height: 100%;
+  width: 100%;
+  display: table;
+  background-color: #F4F4F4; }
+  #welcomeDiv #welcomeContent {
+    width: 100%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; }
+    #welcomeDiv #welcomeContent h1, #welcomeDiv #welcomeContent h3 span {
+      color: #4551FF; }
+    #welcomeDiv #welcomeContent h1 {
+      padding: 0.5em; }
+    #welcomeDiv #welcomeContent #username, #welcomeDiv #welcomeContent #joinChat {
+      width: 30%;
+      margin-top: 0.5em;
+      padding: 0.5em;
+      color: #4551FF;
+      background-color: white;
+      border: 2px solid #4551FF;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1em; }
+    #welcomeDiv #welcomeContent #username {
+      text-align: center; }
+    #welcomeDiv #welcomeContent #joinChat {
+      cursor: pointer; }
+
+#header {
+  width: 100%; }
+  #header #header-content {
+    padding: 0.5em;
+    color: #4551FF;
+    background-color: #F4F4F4;
+    border-bottom: 2px solid #4551FF; }
+    #header #header-content div, #header #header-content h2, #header #header-content span {
+      display: inline-block; }
+    #header #header-content h2 {
+      font-size: 2em; }
+    #header #header-content #commands {
+      float: right;
+      font-size: 0.8em; }
+      #header #header-content #commands span {
+        cursor: pointer; }
+
+#messages-container {
+  height: 75%; }
+  #messages-container #messages {
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto; }
+    #messages-container #messages .messageContainer {
+      width: 100%;
+      padding-top: 0.4em;
+      padding-bottom: 0.4em;
+      padding-left: 0.4em;
+      padding-right: 0.4em; }
+      #messages-container #messages .messageContainer .message {
+        display: inline-block;
+        max-width: 75%;
+        padding: 0.3em;
+        text-align: justify;
+        color: #1A1A1A;
+        background-color: #F4F4F4;
+        border: 2px solid #4551FF;
+        border-radius: 6px; }
+        #messages-container #messages .messageContainer .message .messageAuthor {
+          font-weight: bold; }
+        #messages-container #messages .messageContainer .message .messageText .emoticon {
+          height: 2.25em; }
+      #messages-container #messages .messageContainer:nth-child(even) {
+        background-color: #F4F4F4; }
+        #messages-container #messages .messageContainer:nth-child(even) .message {
+          background-color: white; }
+      #messages-container #messages .messageContainer.owner {
+        text-align: right; }
+        #messages-container #messages .messageContainer.owner .message .messageAuthor {
+          display: none; }
+      #messages-container #messages .messageContainer.serverInfo {
+        padding: 0.15em;
+        text-align: center;
+        color: #1A1A1A; }
+      #messages-container #messages .messageContainer.server .message .messageAuthor {
+        color: red; }
+
+#form-container #formSendMessage {
+  padding: 1em;
+  border-top: 2px solid #4551FF;
+  background-color: #F4F4F4;
+  text-align: center; }
+  #form-container #formSendMessage #message {
+    width: 100%;
+    height: 100%;
+    padding: 0.4em;
+    color: #1A1A1A;
+    border: 2px solid #4551FF;
+    border-radius: 6px; }
+  #form-container #formSendMessage #sendMessage {
+    width: 100%;
+    margin-top: 0.4em;
+    padding: 0.4em;
+    color: #4551FF;
+    background-color: white;
+    border: 2px solid #4551FF;
+    border-radius: 6px; }
+
+/*# sourceMappingURL=style.css.map */

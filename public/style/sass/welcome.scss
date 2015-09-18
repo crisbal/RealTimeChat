@@ -1,0 +1,47 @@
+@import "colors.scss";
+
+#welcomeDiv{
+    height: 100%;
+    width: 100%;
+    display: table;
+    background-color: $main-white;
+
+    #welcomeContent{
+        width: 100%;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+
+        h1, h3 span{
+            color: $main-color;
+        }
+
+        h1{
+            padding: 0.5em;
+        }
+
+        #username,#joinChat{
+            width: 30%;
+
+            margin-top: 0.5em;
+            padding: 0.5em;
+
+            color: $main-color;
+            background-color: white;
+            border: 2px solid $main-color;
+            
+            border-radius: 6px;
+
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        #username{
+            text-align: center;
+        }
+        #joinChat{
+            cursor: pointer;
+        }
+
+    } 
+}

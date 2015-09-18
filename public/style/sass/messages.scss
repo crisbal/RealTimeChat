@@ -1,0 +1,119 @@
+@import "colors.scss";
+@import "mixins.scss";
+
+#messages-container{
+
+    height: 75%;  
+    
+    #messages{
+        height: 100%;  
+        max-height: 100%;
+        overflow-y: auto;
+
+        .messageContainer{
+            
+            
+
+            width: 100%;
+            padding-top: 0.4em;
+            padding-bottom: 0.4em;
+            padding-left: 0.4em;
+            padding-right: 0.4em;
+            
+            .message{
+                display: inline-block;
+                max-width: 75%;
+
+                padding: 0.3em;
+                
+                text-align: justify;
+                
+                color: $main-dark;
+                background-color: $main-white;
+
+                border: 2px solid $main-color;
+                border-radius: 6px;
+                .messageAuthor{
+                    font-weight: bold;
+                }
+
+                .messageText{
+                    .emoticon{
+                        height: 2.25em;
+                    }
+                }
+            }
+            
+            &:nth-child(even){
+                background-color: $main-white;
+
+                .message{
+                    background-color: white;
+                }
+            }
+
+            &.owner{
+                text-align: right;
+                
+                .message{
+                    .messageAuthor{
+                        display: none;
+                    }
+                }
+              
+            }
+
+            &.serverInfo{
+                padding: 0.15em;
+                text-align: center;
+
+                color: $main-dark;
+            }
+
+            &.server{
+                .message{
+                    .messageAuthor{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+#form-container{  
+    
+    #formSendMessage{
+        
+        padding: 1em;
+
+        border-top: 2px solid $main-color;
+        
+        background-color: $main-white;
+        text-align: center;
+        #message{
+            width: 100%;
+            height: 100%;
+            padding: 0.4em;
+
+            color: $main-dark;
+            border: 2px solid $main-color;
+
+            border-radius: 6px;
+        }
+
+        #sendMessage{
+            width: 100%;
+
+            margin-top: 0.4em;
+            padding: 0.4em;
+
+            color: $main-color;
+            background-color: white;
+            border: 2px solid $main-color;
+            
+            border-radius: 6px;
+        }
+    }
+}
